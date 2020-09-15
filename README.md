@@ -5,9 +5,9 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/schantldev/git-webhook.svg?style=flat-square)](https://scrutinizer-ci.com/g/schantldev/git-webhook)
 [![Total Downloads](https://img.shields.io/packagist/dt/schantldev/git-webhook.svg?style=flat-square)](https://packagist.org/packages/schantldev/git-webhook)
 
-An easy way to update your application using Github's webhooks. No manual deploy required.
+An easy way to update your application using Github webhooks. No manual deploy required.
 
-This package sets up a route that you can use for your github webhooks. You can set your secret and define the URL of the route. The pacakge will publish a deploy script that you can customize to fit your needs. It will be executed to fit
+This package sets up a route that you can use for your Github webhooks. You can set a secret and define the URL of the route. The pacakge will publish a deploy script that you can customize to fit your needs.
 
 ## Installation
 
