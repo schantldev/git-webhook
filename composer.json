@@ -1,0 +1,50 @@
+{
+    "name": "schantldev/git-webhook",
+    "description": "An easy way to update your application using Github's webhooks. No manual deploy required.",
+    "keywords": [
+        "schantldev",
+        "git-webhook"
+    ],
+    "homepage": "https://github.com/schantldev/git-webhook",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Schantl Web Development & Services",
+            "email": "office@schantl.io",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SchantlDev\\GitWebhook\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SchantlDev\\GitWebhook\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SchantlDev\\GitWebhook\\GitWebhookServiceProvider"
+            ]
+        }
+    }
+}
