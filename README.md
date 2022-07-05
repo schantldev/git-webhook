@@ -1,7 +1,7 @@
 # Laravel - Git Webhook
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/schantldev/git-webhook.svg?style=flat-square)](https://packagist.org/packages/schantldev/git-webhook)
-[![Build Status](https://img.shields.io/travis/schantldev/git-webhook/master.svg?style=flat-square)](https://travis-ci.org/schantldev/git-webhook)
+![PHP UNIT](https://github.com/schantldev/git-webhook/actions/workflows/php.yml/badge.svg)
 [![Quality Score](https://img.shields.io/scrutinizer/g/schantldev/git-webhook.svg?style=flat-square)](https://scrutinizer-ci.com/g/schantldev/git-webhook)
 [![Total Downloads](https://img.shields.io/packagist/dt/schantldev/git-webhook.svg?style=flat-square)](https://packagist.org/packages/schantldev/git-webhook)
 
