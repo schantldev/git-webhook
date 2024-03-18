@@ -4,6 +4,7 @@ namespace SchantlDev\GitWebhook\Tests;
 
 use Illuminate\Support\Facades\Config;
 use Orchestra\Testbench\TestCase;
+use PHPUnit\Framework\Attributes\Test;
 use SchantlDev\GitWebhook\GitWebhookServiceProvider;
 
 class WebhookTest extends TestCase
@@ -19,20 +20,20 @@ class WebhookTest extends TestCase
         return [GitWebhookServiceProvider::class];
     }
 
-    /** @test */
+    #[Test]
     public function deploy_scripts_exists()
     {
         $this->assertFileExists(storage_path('git-webhook/git_deploy.sh'));
     }
 
-    /** @test */
+    #[Test]
     public function route_exists()
     {
         $response = $this->post(config('git-webhook.route'));
         $response->assertStatus(200);
     }
 
-    /** @test */
+    #[Test]
     public function try_with_signature_no_secret_set()
     {
         $response = $this->withHeaders([
@@ -42,7 +43,7 @@ class WebhookTest extends TestCase
         $response->assertStatus(403);
     }
 
-    /** @test */
+    #[Test]
     public function try_with_signature()
     {
         Config::set('git-webhook.secret', '1234');
