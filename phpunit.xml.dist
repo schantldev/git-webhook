@@ -5,24 +5,11 @@
   executionOrder="random" failOnWarning="true" failOnRisky="true" failOnEmptyTestSuite="true"
   beStrictAboutOutputDuringTests="true" cacheDirectory=".phpunit.cache"
   backupStaticProperties="false">
-  <php>
-    <ini name="xdebug.mode" value="coverage" />
-    <env name="XDEBUG_MODE" value="coverage" />
-  </php>
-
   <testsuites>
     <testsuite name="SchantlDev Git Webhook">
       <directory>tests</directory>
     </testsuite>
   </testsuites>
-
-  <coverage>
-    <report>
-      <html outputDirectory="build/coverage" />
-      <text outputFile="build/coverage.txt" />
-      <clover outputFile="build/logs/clover.xml" />
-    </report>
-  </coverage>
 
   <logging>
     <junit outputFile="build/report.junit.xml" />
