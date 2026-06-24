@@ -2,9 +2,9 @@ name: PHP Composer
 
 on:
     push:
-        branches: ["master"]
+        branches: ["main"]
     pull_request:
-        branches: ["master"]
+        branches: ["main"]
 
 permissions:
     contents: read
@@ -31,11 +31,11 @@ jobs:
             - name: Install dependencies
               uses: php-actions/composer@v6
               with:
-                  php_version: "8.2"
+                  php_version: "8.3"
 
             - name: Run tests
               uses: php-actions/composer@v6
               with:
                   command: test
-                  php_version: "8.2"
+                  php_version: "8.3"
                   php_extensions: xdebug
